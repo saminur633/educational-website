@@ -8,69 +8,57 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.2/dist/full.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="bg-white p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="flex space-x-4 items-center">
-        <!-- Education Button -->
-        <a class="btn btn-ghost text-xl text-gray-800"><strong>Education</strong></a>
-        <!-- Search Bar -->
-        <input type="text" placeholder="Search" class="px-2 py-1 rounded-md border border-gray-600">
-        <!-- Navigation Links -->
-        <div class="dropdown relative">
-          <label tabindex="0" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Class 6-8</label>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
-            <li><a href="https://drive.google.com/uc?export=download&id=1hLOw-S2jeKiyX8FrrbiJvchgGHHouKxi" target="_blank">Class 6 Bangla Book</a></li>
-            <li><a href="https://drive.google.com/file/d/1z_R51ZzvMR6Se-2H86AjKTSTgYrRHZA5/preview" target="_blank">Class 6 ICT Book</a></li>
-
-           
-
-
-          </ul>
-        </div>
-        <div class="dropdown relative">
-          <label tabindex="0" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">ICT Program</label>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
-            <li>
-                <li><a href="https://drive.google.com/file/d/17RTwdUtYglDgN398mEHoBYSb5CB2baNS/view?usp=sharing" target="_blank">HSC ICT Book</a></li>
-                
-            </li>
-            
-            <li><a href="https://drive.google.com/file/d/1985HKtqRURSSYH33ieRENQGCuanHmZce/view?usp=sharing" target="_blank">ICT 9-10</a></li>
-          </ul>
-        </div>
-        <a href="#skills" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Mathematics</a>
-        <a href="#admission-test" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Admission Test Question</a>
-        <a href="https://www.youtube.com/watch?v=SB9GmdRB0dg" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">Video</a>
-        <a href="#english-center" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium">English</a>
-        <div class="dropdown relative">
-          <label tabindex="0" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">আরো</label>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
-            <li><a href="#option1">Option 1</a></li>
-            <li><a href="#option2">Option 2</a></li>
-            <li><a href="#option3">Option 3</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Login Button -->
-      <a href="#login" class="btn btn-primary">লগ-ইন</a>
+  
+  <nav class="bg-white p-4 grid grid-cols-2 md:grid-cols-10 gap-4">
+    <a class="btn btn-ghost col-span-2 md:col-span-1 text-xl"><strong>Education</strong></a>
+    <!-- Search Input -->
+    <input id="searchInput" type="text" placeholder="Search..." class="border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-2 md:col-span-2">
+    
+    <!-- Navigation Links -->
+    <div class="dropdown relative col-span-2 md:col-span-1">
+      <label tabindex="0" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Class 6-8</label>
+      <ul id="class68Menu" tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+        <li><a href="https://drive.google.com/uc?export=download&id=1hLOw-S2jeKiyX8FrrbiJvchgGHHouKxi" target="_blank">Class 6 Bangla Book</a></li>
+        <li><a href="https://drive.google.com/file/d/1z_R51ZzvMR6Se-2H86AjKTSTgYrRHZA5/preview" target="_blank">Class 6 ICT Book</a></li>
+      </ul>
     </div>
-  </nav>
+
+    <div class="dropdown relative col-span-2 md:col-span-1">
+      <label tabindex="0" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">ICT Program</label>
+      <ul id="ictProgramMenu" tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+        <li><a href="https://drive.google.com/file/d/17RTwdUtYglDgN398mEHoBYSb5CB2baNS/view?usp=sharing" target="_blank">HSC ICT Book</a></li>
+        <li><a href="https://drive.google.com/file/d/1985HKtqRURSSYH33ieRENQGCuanHmZce/view?usp=sharing" target="_blank">ICT 9-10</a></li>
+      </ul>
+    </div>
+
+    <a href="#skills" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium col-span-2 md:col-span-1">Mathematics</a>
+   
+    <a href="https://www.youtube.com/watch?v=SB9GmdRB0dg" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium col-span-2 md:col-span-1">Video</a>
+    <a href="#english-center" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium col-span-2 md:col-span-1">English</a>
+    
+    
+      
+    <!-- Login Button -->
+    
+</nav>
+
 
   <!-- New Section for Learning Journey -->
   <section class="bg-gray-100 py-8">
-    <div class="container mx-auto text-center">
-      <h2 class="text-2xl font-bold mb-4">নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক</h2>
-      <p class="mb-6">যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যাও তোমার পছন্দের সেকশনে</p>
-      <div class="flex flex-wrap justify-center space-x-4">
-        <a href="#" class="btn btn-secondary mb-2">Class 6-8</a>
-        <a href="#" class="btn btn-secondary mb-2">ICT Program</a>
-        <a href="#" class="btn btn-secondary mb-2">HSC ICT</a>
-        <a href="#skills" class="btn btn-secondary mb-2">Mathematics</a>
-        <a href="#admission-test" class="btn btn-secondary mb-2">Admission Test Question</a>
-        <a href="#english-center" class="btn btn-secondary mb-2">English</a>
+    <div class="container mx-auto text-center grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="col-span-2 md:col-span-3">
+        <h2 class="text-2xl font-bold mb-4">নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক</h2>
+        <p class="mb-6">যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যাও তোমার পছন্দের সেকশনে</p>
       </div>
+      <a href="#" class="btn btn-secondary mb-2 col-span-1">Class 6-8</a>
+      <a href="#" class="btn btn-secondary mb-2 col-span-1">ICT Program</a>
+      <a href="#" class="btn btn-secondary mb-2 col-span-1">HSC ICT</a>
+      <a href="#skills" class="btn btn-secondary mb-2 col-span-1">Mathematics</a>
+      <a href="#admission-test" class="btn btn-secondary mb-2 col-span-1">Admission Test Question</a>
+      <a href="#english-center" class="btn btn-secondary mb-2 col-span-1">English</a>
     </div>
-  </section>
+</section>
+
 
   <!-- PDF Display Section -->
   <div id="pdf-display" class="hidden flex flex-col items-center mt-4">
@@ -85,16 +73,16 @@
         <!-- First Row -->
         <div class="p-4 bg-white rounded-md shadow-md">
           <h3 class="text-lg font-semibold mb-2">Class 6-12</h3>
-          <p>Free Videos, Live Classes</p>
+          <p>Free Videos</p>
         </div>
         <div class="p-4 bg-white rounded-md shadow-md">
           <h3 class="text-lg font-semibold mb-2">Skills</h3>
-          <p>English, Freelancing, Skills & IT</p>
+          <p>CSE , Law</p>
         </div>
         <!-- Second Row -->
         <div class="p-4 bg-white rounded-md shadow-md">
           <h3 class="text-lg font-semibold mb-2">Admission Test</h3>
-          <p>University+Group, Medical</p>
+          <p>University+ Medical</p>
         </div>
         <div class="p-4 bg-white rounded-md shadow-md">
           <h3 class="text-lg font-semibold mb-2">Job Preparation</h3>
@@ -142,6 +130,36 @@
     function openPDF(pdfUrl) {
       window.open(pdfUrl, '_blank');
     }
+    // search option
+    // Function to filter the list based on search input
+    // Function to filter the navigation links based on search input
+function filterNavigation() {
+  // Get input value and convert it to lowercase
+  const searchInput = document.getElementById('searchInput').value.toLowerCase();
+  
+  // Get the navigation links
+  const navLinks = document.querySelectorAll('nav a');
+  
+  // Loop through each navigation link
+  navLinks.forEach(link => {
+    // Get the text content of the navigation link and convert it to lowercase
+    const linkText = link.textContent.toLowerCase();
+    
+    // Check if the search input matches any part of the navigation link text
+    if (linkText.includes(searchInput)) {
+      // Display the navigation link if it matches the search input
+      link.style.display = 'block';
+    } else {
+      // Hide the navigation link if it does not match the search input
+      link.style.display = 'none';
+    }
+  });
+}
+
+// Add event listener to the search input
+document.getElementById('searchInput').addEventListener('input', filterNavigation);
+
+
   </script>
 </body>
 </html>

@@ -32,3 +32,4 @@ app.get('/home', (req, res) => {
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
+// {/* <a class="btn btn-ghost text-xl text-gray-800"><strong>Education</strong></a> */}
