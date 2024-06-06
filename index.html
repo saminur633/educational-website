@@ -10,7 +10,7 @@
 <body>
   
   <nav class="bg-white p-4 grid grid-cols-2 md:grid-cols-10 gap-4">
-    <a class="btn btn-ghost col-span-2 md:col-span-1 text-xl"><strong>Education</strong></a>
+    <a class="btn btn-ghost col-span-2 md:col-span-1 text-xl"><strong>Education Blog</strong></a>
     <!-- Search Input -->
     <input id="searchInput" type="text" placeholder="Search..." class="border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-2 md:col-span-2">
     
@@ -31,7 +31,14 @@
       </ul>
     </div>
 
-    <a href="#skills" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium col-span-2 md:col-span-1">Mathematics</a>
+    <div class="dropdown relative col-span-2 md:col-span-1">
+      <label tabindex="0" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium cursor-pointer" onclick="toggleDropdown('mathematicsMenu')">Mathematics</label>
+      <ul id="mathematicsMenu" tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+        <li><a href="https://drive.google.com/file/d/1_MpzBLUxqRdUfWIFjJAF_FbpIn5HWwZe/view?usp=sharing" download>Class 9-10 Mathematics PDF</a></li>
+        <li><a href="" download>Class 9-10 Mathematics PDF</a></li>
+      </ul>
+    </div>
+
    
     <a href="https://www.youtube.com/watch?v=SB9GmdRB0dg" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium col-span-2 md:col-span-1">Video</a>
     <a href="#english-center" class="text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium col-span-2 md:col-span-1">English</a>
@@ -99,18 +106,26 @@
   </section>
   <section>
     <div class="p-4 bg-white text-center rounded-md shadow-md">
-        <h3 class="text-lg font-semibold mb-2">Classes 6-10</h3>
+        <h3 class="text-lg font-semibold mb-2">BSC IN CSE</h3>
         <p>
-          বছর জুড়ে অনলাইন ব্যাচে কী কী থাকছে? 
-          সেরা শিক্ষকদের পরিচর্যায় দেশের যেকোন প্রান্ত থেকে অব্যাহত থাকুক পড়াশুনার অগ্রযাত্রা
+          
+          কম্পিউটার  সায়েন্স এন্ড ইঞ্জিনিয়ারিং বিভাগের শিক্ষার্থীদের জন্য বিভিন্ন বিষয়ের গুরুত্বপূর্ণ ভিডিও লিংক।
         </p>
       </div>
   </section>
  <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RRQPvvg7rqA" frameborder="0" allowfullscreen style="padding: 10px;"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RRQPvvg7rqA" frameborder="0" allowfullscreen style="padding: 10px;"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RRQPvvg7rqA" frameborder="0" allowfullscreen style="padding: 10px;"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RRQPvvg7rqA" frameborder="0" allowfullscreen style="padding: 10px;"></iframe>
+    
+    
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLgrAmbRAezugf1uH-OmJF43TEHdi5dg8w" frameborder="0" allowfullscreen style="padding: 10px;"></iframe>
+
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLaZmRBXuyCFUNng3H8gRnO7qFYDNapVpv" frameborder="0" allowfullscreen style="padding: 10px;"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLgrAmbRAezuhDI7LqoRiDlS2eimB7zXBf" frameborder="0" allowfullscreen style="padding: 10px;"></iframe>
+
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLgrAmbRAezuhRWTyOKPxvoiyNQfPo6Iv3" frameborder="0" allowfullscreen style="padding: 10px;"></iframe>
+    
    
        
   </section>
@@ -158,6 +173,14 @@ function filterNavigation() {
 
 // Add event listener to the search input
 document.getElementById('searchInput').addEventListener('input', filterNavigation);
+function toggleDropdown(menuId) {
+  var menu = document.getElementById(menuId);
+  if (menu.style.display === "none" || menu.style.display === "") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+}
 
 
   </script>
